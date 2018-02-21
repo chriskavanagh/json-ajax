@@ -1,3 +1,5 @@
+// https://www.youtube.com/watch?v=zPHerhks2Vg
+
 var newItemCounter = 1;
 var ourList = document.querySelector("#our-list");
 var headline = document.querySelector("#headline");
