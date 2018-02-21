@@ -11,6 +11,7 @@ function activateItem(e) {
     if (e.target.nodeName === "LI") {
         headline.innerHTML = e.target.innerHTML;
         for (i=0; i < listItems.length; i++) {
+            // e.target.parentNode.children.length
             listItems[i].classList.remove("active");
         }
         e.target.classList.add("active");
