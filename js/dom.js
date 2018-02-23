@@ -1,4 +1,4 @@
-// https://www.youtube.com/watch?v=zPHerhks2Vg
+// https://www.youtube.com/watch?v=lisPHerhks2Vg
 
 var newItemCounter = 1;
 var ourList = document.querySelector("#our-list");
@@ -22,9 +22,9 @@ function activateItem(e) {
 ourButton.addEventListener("click", (e) => {        
     ourList.innerHTML += `<li>Something New ${newItemCounter++}</li>`;
     // ourList.innerHTML += `<li class="list-group-item">Something New ${newItemCounter++}</li>`;
-    var z = ourList.getElementsByTagName("li");
-    for (var i=0; i < z.length; i++) {
-        z[i].classList.add("list-group-item");
+    var lis = ourList.getElementsByTagName("li");
+    for (var i=0; i < lis.length; i++) {
+        lis[i].classList.add("list-group-item");
     }    
 });
 
