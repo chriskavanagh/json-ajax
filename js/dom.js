@@ -19,11 +19,15 @@ function activateItem(e) {
     }    
 }
 
-ourButton.addEventListener("click", (e) => {
-    console.log(e.type);    
-    console.log(e.currentTarget);
+ourButton.addEventListener("click", (e) => {        
     ourList.innerHTML += `<li>Something New ${newItemCounter++}</li>`;
+    // ourList.innerHTML += `<li class="list-group-item">Something New ${newItemCounter++}</li>`;
+    var z = ourList.getElementsByTagName("li");
+    for (var i=0; i < z.length; i++) {
+        z[i].classList.add("list-group-item");
+    }    
 });
+
 
 /*
 for(i=0; i < listItems.length; i++) {
