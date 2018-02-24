@@ -14,5 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "handlebars": "^4.0.11"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.7.1"
   }
 }
